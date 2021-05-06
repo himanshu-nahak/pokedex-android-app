@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PokemonInfo">
+
+    <ImageView
+        android:id="@+id/pDreamImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pokeball"
+        android:layout_gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/pTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:fontFamily="@font/sourcesansproregular"
+        android:textFontWeight="600"
+        android:textColor="@color/pokeball_black"
+        android:layout_marginBottom="10dp"
+        />
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/pType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sourcesansproregular"
+        android:gravity="center"
+        android:text="Identifying Pokemon..."
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/pokeball_black"
+
+        />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/pHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:fontFamily="@font/sourcesansproregular"
+            android:layout_weight="1"
+            android:textColor="@color/pokeball_black"
+            />
+
+        <TextView
+            android:id="@+id/pWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:fontFamily="@font/sourcesansproregular"
+            android:layout_weight="1"
+            android:textColor="@color/pokeball_black"
+
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/pGenus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sourcesansproregular"
+        android:gravity="center"
+        android:text="Identifying Pokemon..."
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/pokeball_black"
+
+        />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/pFlavorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sourcesansproregular"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/pokeball_black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+</LinearLayout>
