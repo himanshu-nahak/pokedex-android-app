@@ -6,9 +6,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-
-import androidx.cardview.widget.CardView;
 
 public class ImageAdapter extends BaseAdapter {
 

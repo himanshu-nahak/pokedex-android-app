@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                Toast.makeText(getApplicationContext(), "#"+ (position + 1), Toast.LENGTH_SHORT).show();
+//
                 Intent intent = new Intent(getApplicationContext(), PokemonInfo.class);
                 Bundle bundle = new Bundle();
                 bundle.putInt("pId", position);

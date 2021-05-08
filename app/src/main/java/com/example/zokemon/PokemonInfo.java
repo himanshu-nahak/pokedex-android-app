@@ -56,8 +56,7 @@ public class PokemonInfo extends AppCompatActivity {
             @Override
             public void onResponse(JSONObject response) {
                 try {
-                        pType1 = "";
-                        pType2 = "";
+
 //                    JSONObject pokemonObject = response.getJSONObject("character");
 //                    JSONObject houseObject = characterObject.getJSONObject("house");
 //                    String quote = response.getString("sentence");
@@ -100,6 +99,10 @@ public class PokemonInfo extends AppCompatActivity {
                     }
                     else
                         pType.setText(pType1.toUpperCase());
+
+
+                    Toast.makeText(getApplicationContext(),pType1 + " " + pType2,Toast.LENGTH_SHORT).show();
+
                 } catch (JSONException e) {
 
                     e.printStackTrace();
