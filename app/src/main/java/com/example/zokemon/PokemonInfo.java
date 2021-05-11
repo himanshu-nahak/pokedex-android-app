@@ -57,17 +57,11 @@ public class PokemonInfo extends AppCompatActivity {
             public void onResponse(JSONObject response) {
                 try {
 
-//                    JSONObject pokemonObject = response.getJSONObject("character");
-//                    JSONObject houseObject = characterObject.getJSONObject("house");
-//                    String quote = response.getString("sentence");
-//                    String character = characterObject.getString("name");
-//                    String house = houseObject.getString("name");
-//
-//                    tvQuote.setText(quote);
-//                    tvCharacter.setText(character);
-//                    tvHouse.setText(house);
-                     pName = response.getString("name");
-                     pTitle.setText(""+pokemon_id+" "+ pName);
+                    pType1="";
+                    pType2="";
+
+                    pName = response.getString("name");
+                    pTitle.setText(""+pokemon_id+" "+ pName);
                     getSupportActionBar().setTitle(pName);
 
                     pName = response.getString("name");
@@ -99,9 +93,6 @@ public class PokemonInfo extends AppCompatActivity {
                     }
                     else
                         pType.setText(pType1.toUpperCase());
-
-
-                    Toast.makeText(getApplicationContext(),pType1 + " " + pType2,Toast.LENGTH_SHORT).show();
 
                 } catch (JSONException e) {
 
