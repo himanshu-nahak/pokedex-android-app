@@ -6,7 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/pokeball_bg3"
+    android:orientation="vertical"
     >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textFontWeight="600"
+        android:text="Hello Trainer!"
+        android:textColor="@color/pokeball_white"
+        android:padding="4dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Tap on any Pokemon to check it's Pokedex entry"
+        android:textColor="@color/pokeball_white"
+        android:padding="4dp"
+        />
 
     <GridView
         android:id="@+id/grid_view"

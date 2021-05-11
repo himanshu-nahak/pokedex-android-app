@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //
-                Intent intent = new Intent(getApplicationContext(), PokemonInfo.class);
+//                Intent intent = new Intent(getApplicationContext(), PokemonInfo.class);
+                Intent intent = new Intent(getApplicationContext(), ViewPokemon.class);
+
                 Bundle bundle = new Bundle();
                 bundle.putInt("pId", position);
                 intent.putExtras(bundle);

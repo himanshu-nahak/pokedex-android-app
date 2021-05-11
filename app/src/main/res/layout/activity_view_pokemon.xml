@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewPokemon"
+    android:background="@color/pokeball_white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:id="@+id/pDreamImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="24sp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:elevation="10dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/pTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Scanning the Pokemon..."
+            android:textSize="24sp"
+            android:fontFamily="@font/sourcesansproregular"
+            android:textFontWeight="600"
+            android:textColor="@color/pokeball_white"
+
+            />
+        <LinearLayout
+            android:id="@+id/typeLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:elevation="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#f0f0f0"
+                android:text="Type"
+                />
+            <TextView
+                android:id="@+id/pType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#f0f0f0"
+                android:text="Fire"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:padding="2dp"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/heightLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:gravity="center_horizontal"
+                android:elevation="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#f0f0f0"
+                    android:text="Height"
+                    />
+                <TextView
+                    android:id="@+id/pHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="#f0f0f0"
+                    android:text="2m"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/weightLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:padding="16dp"
+                android:gravity="center_horizontal"
+                android:elevation="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#f0f0f0"
+                    android:text="Weight"
+                    />
+                <TextView
+                    android:id="@+id/pWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="#f0f0f0"
+                    android:text="50kg"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/aboutLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:elevation="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#f0f0f0"
+                android:text="About"
+                />
+            <TextView
+                android:id="@+id/pFlavorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#f0f0f0"
+                android:text="Identifying Pokemon..."
+                android:gravity="center"
+               />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
